@@ -17,13 +17,13 @@ namespace AgebZonasMetropolitanas
 			string cveAgeb;
 			int agebs = 0;
 
-			string originalsGeoJsonPath = @"/Users/eherrador/Projects/AgebZonasMetropolitanas/OriginalsGeoJsonFiles/";
-			string newGeoJsonPath = @"/Users/eherrador/Projects/AgebZonasMetropolitanas/NewGeoJsonFiles/";
-			string clavesAgebsPath = @"/Users/eherrador/Projects/AgebZonasMetropolitanas/ClavesAgebs/";
+			string originalsGeoJsonPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/Originales/";
+			string newGeoJsonPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/Originales y Filtrados/";
+			string clavesAgebsPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/ClavesAgebs/";
 
 			//string clavesAgebs = @"AGS.txt";
 			//string clavesAgebs = @"BC.txt";
-			//string clavesAgebs = @"DF.txt";
+			//string clavesAgebs = @"DF.txt";  //Tiene que usarse tanto con DFUrbAgeb.json como con MEXUrbAgeb.json. Contiene la clave de ambos.
 			//string clavesAgebs = @"GTO.txt";
 			//string clavesAgebs = @"JL.txt";
 			//string clavesAgebs = @"MOR.txt";
