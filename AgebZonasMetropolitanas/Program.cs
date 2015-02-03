@@ -19,7 +19,7 @@ namespace AgebZonasMetropolitanas
 
 			string originalsGeoJsonPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/Originales/";
 			string newGeoJsonPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/Originales y Filtrados/";
-			string clavesAgebsPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/ClavesAgebs/";
+			string clavesAgebsPath = @"/Users/eherrador/Desktop/GFK/GeoJSON/Claves Agebs ZM/";
 
 			//string clavesAgebs = @"AGS.txt";
 			//string clavesAgebs = @"BC.txt";
@@ -66,6 +66,7 @@ namespace AgebZonasMetropolitanas
 						if (f.Properties.ContainsValue (cveAgeb)) {
 							Console.WriteLine ("Se ha encontrado la clave ageb");
 							featuresList.Add (f);
+							//featuresList.Features.Add(f);
 							agebs++;
 						}
 					}
@@ -78,6 +79,7 @@ namespace AgebZonasMetropolitanas
 
 			using (StreamWriter outfile = new StreamWriter(newGeoJsonPath + geoJsonFileName))
 			{
+
 				outfile.Write (featuresSerialized);
 			}
 			Console.WriteLine("Se ha generado un nuevo archivo GeoJSON...");
